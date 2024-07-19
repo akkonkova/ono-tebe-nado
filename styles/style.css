@@ -1,1 +1,79 @@
-/* место для вашего кода */
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* общий стиль для контентной секции*/
+content-section {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* применяем стили для всей шапки*/
+.header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  place-items: center;
+  margin: 92px 24px 96px;
+}
+
+/* стили контейнера навигации*/
+.header__menu {
+  display: flex;
+  justify-self: flex-end;
+  margin-right: 4px;
+}
+
+/* стили для списка ссылок*/
+.header__links-list {
+  display: flex;
+  gap: 26px;
+}
+
+/* стили для пункта списка ссылок, padding-left необходим для центрирования маркера в списке*/
+.header__links-list-item {
+  list-style: circle;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  padding-left: 7px;
+  line-height: 1.35;
+  font-size: 18px;
+}
+
+/* стили, чтобы сделать ссылку без кружочка*/
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+/*стили ссылок*/
+.header__link {
+  font-size: 18px;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+/*стили активных ссылок*/
+.header__link_active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/*стили для контейнера логотипа*/
+.header__logo {
+  display: block;
+  max-width: 137px;
+}
+
+/*стили для картинки с логотипом*/
+.header__logo-image {
+  width: 100%;
+}
+
+/*стили для контейнера с адресом*/
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  font-style: inherit;
+  padding-right: 61px;
+}
