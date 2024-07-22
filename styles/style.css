@@ -33,7 +33,6 @@ main {
 /* стили для списка ссылок */
 .header__links-list {
   display: flex;
-
   gap: 30px;
 }
 
@@ -204,6 +203,7 @@ main {
 .lots__card-list {
   display: flex;
   justify-content: space-between;
+  gap: 25px;
   flex-wrap: wrap;
   padding: 37px 0 30px 0;
 }
@@ -212,7 +212,9 @@ main {
 .lots__card-list-item {
   list-style: none;
   height: 100%;
-  max-width: 334px;
+  flex-basis: 334px;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
 /* стили для ссылки, обрамляющая карточку */
