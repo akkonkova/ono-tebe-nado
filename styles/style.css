@@ -10,6 +10,7 @@ main {
 /* общий стиль для контентной секции */
 .content-section {
   width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -32,6 +33,7 @@ main {
 /* стили для списка ссылок */
 .header__links-list {
   display: flex;
+
   gap: 30px;
 }
 
@@ -194,7 +196,7 @@ main {
   font-size: 40px;
   line-height: 0.47px;
   color: #000;
-  padding: 0 0 16px 40px;
+  padding: 3px 0 14px 40px;
   text-transform: uppercase;
 }
 
@@ -203,7 +205,7 @@ main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 36px 0 30px 0;
+  padding: 37px 0 30px 0;
 }
 
 /* стили для пункта списка карточки */
@@ -259,7 +261,7 @@ main {
   z-index: 1;
   font-weight: 700;
   font-size: 22px;
-  line-height: 1.2;
+  line-height: 1.19;
   text-decoration: underline;
   text-underline-offset: 3px;
   text-transform: uppercase;
@@ -278,6 +280,7 @@ main {
   text-align: left;
 }
 
+/* стили для многоточия, тк там отличное от дефолтного межбуквенное расстояние */
 .card__text-ellipsis {
   letter-spacing: 0.2em;
 }
@@ -288,8 +291,61 @@ main {
   font-weight: 400;
   font-size: 20px;
   line-height: 0.23;
-  padding: 9px 0 0 40px;
+  padding: 8px 0 47px 40px;
   color: #000;
   text-decoration: underline;
-  text-underline-offset: 5px;
+  text-underline-offset: 4px;
 }
+/* ниже стили всей секции про аукцион */
+
+/* стили для всей секции */
+.about {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 334px auto;
+  padding: 0 28px 180px 24px;
+  column-gap: 24px;
+}
+
+/* стили для колонок */
+.about__column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+/* стили для логотипа */
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  background: #000;
+  border-radius: 50%;
+}
+
+/* стили для картинки лого */
+.about__logo-image {
+  width: 148px;
+}
+
+/* стили для заголовка секции */
+.about__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #000;
+  padding: 104px 0 80px;
+}
+
+/* стили для текстового блока*/
+.about__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
+}
+
+/* все стили для футера*/
