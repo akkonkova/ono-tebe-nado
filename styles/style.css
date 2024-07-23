@@ -293,7 +293,7 @@ main {
   font-weight: 400;
   font-size: 20px;
   line-height: 0.23;
-  padding: 8px 0 47px 40px;
+  padding: 8px 0 46px 40px;
   color: #000;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -356,15 +356,13 @@ main {
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 180px 50px 88px;
-  gap: 185px;
+  padding: 181px 50px 88px;
 }
 
 /* стили для блока навигации по списку ссылок */
 .footer__menu {
-  display: flex;
-  flex-direction: column;
-  padding-left: 35px;
+  display: block;
+  padding-left: 37px;
 }
 
 /* стили для контейнера с адресом */
@@ -404,7 +402,6 @@ main {
 /* стили для списка ссылок на соц сети */
 .footer__social-list {
   display: flex;
-  justify-content: space-between;
   gap: 48px;
 }
 
