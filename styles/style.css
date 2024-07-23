@@ -342,7 +342,7 @@ main {
   padding: 104px 0 80px;
 }
 
-/* стили для текстового блока*/
+/* стили для текстового блока */
 .about__text {
   font-weight: 400;
   font-size: 20px;
@@ -350,4 +350,64 @@ main {
   color: #000;
 }
 
-/* все стили для футера*/
+/* все стили для футера */
+
+/* стили для секции "подвал" */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 180px 50px 88px;
+  gap: 185px;
+}
+
+/* стили для блока навигации по списку ссылок */
+.footer__menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* стили для контейнера с адресом */
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-style: inherit;
+}
+
+/* стили для списка пуктов меню */
+.footer__menu-list
+
+/* стили для пункта списка меню */
+.footer__menu-list-item {
+  list-style: none;
+  line-height: 1.17;
+  font-size: 18px;
+}
+
+/* стили для ссылки меню */
+.footer__menu-link {
+  font-size: 18px;
+  line-height: 1.35;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* стили для активной ссылки меню */
+.footer__menu-link_active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* стили для списка ссылок на соц сети */
+.footer__social-list
+
+/* стили для пункта списка ссылок на соц сети */
+/* стили для пункта списка ссылок на соц сети */
+.footer__social-list-item
+
+/* стили для ссылки на соц сети */
+.footer__social-link
+
+/* стили для иконки соц сети */
+.footer__social-icon
