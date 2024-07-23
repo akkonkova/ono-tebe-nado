@@ -236,27 +236,23 @@ main {
   padding: 50px 40px;
   text-align: left;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* стили для фона карточки про фильмы */
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /* стили для фона карточки про книги */
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /* стили для фона карточки про картины */
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /* стили для заголовка карточки */
