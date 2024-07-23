@@ -88,7 +88,7 @@ main {
 /* стили для всей секции */
 .cover {
   position: relative;
-  padding: 165px 51px 50px 52px;
+  padding: 165px 51px 50px 51px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,7 +112,6 @@ main {
 .cover__title {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   gap: 20px;
   position: relative;
   z-index: 1;
@@ -122,7 +121,10 @@ main {
   line-height: 1.15;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  white-space: nowrap;
+}
+
+.aligned-text {
+  display: block;
 }
 
 .aligned-text_center {
@@ -412,5 +414,5 @@ main {
 
 /* стили для иконки соц сети */
 .footer__social-icon {
- width: 48px;
+  width: 48px;
 }
