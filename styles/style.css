@@ -305,7 +305,7 @@ main {
   display: grid;
   justify-items: center;
   grid-template-columns: 334px auto;
-  padding: 0 28px 180px 24px;
+  padding: 0 28px 0 24px;
   column-gap: 24px;
 }
 
@@ -363,8 +363,8 @@ main {
 /* стили для блока навигации по списку ссылок */
 .footer__menu {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 35px;
 }
 
 /* стили для контейнера с адресом */
@@ -376,19 +376,21 @@ main {
 }
 
 /* стили для списка пуктов меню */
-.footer__menu-list
+.footer__menu-list {
+  text-align: center;
+}
 
 /* стили для пункта списка меню */
 .footer__menu-list-item {
   list-style: none;
-  line-height: 1.17;
+  line-height: normal;
   font-size: 18px;
 }
 
 /* стили для ссылки меню */
 .footer__menu-link {
   font-size: 18px;
-  line-height: 1.35;
+  line-height: 1.17;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -400,14 +402,18 @@ main {
 }
 
 /* стили для списка ссылок на соц сети */
-.footer__social-list
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
 
 /* стили для пункта списка ссылок на соц сети */
-/* стили для пункта списка ссылок на соц сети */
-.footer__social-list-item
-
-/* стили для ссылки на соц сети */
-.footer__social-link
+.footer__social-list-item {
+  list-style: none;
+}
 
 /* стили для иконки соц сети */
-.footer__social-icon
+.footer__social-icon {
+ width: 48px;
+}
