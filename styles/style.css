@@ -49,18 +49,16 @@ main {
   list-style: none;
 }
 
-/* стили ссылок */
+/* стили для ссылок с underline в шапке сайта */
 .header__link {
-  font-size: 18px;
-  line-height: 1.35;
-  text-decoration: none;
-  white-space: nowrap;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 /* стили активных ссылок */
 .header__link_active {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 /* стили для контейнера логотипа */
@@ -81,6 +79,8 @@ main {
   justify-self: end;
   padding-right: 86px;
   font-style: inherit;
+  font-size: 18px;
+  line-height: 1.35;
 }
 
 /* Секция с заголовком "Оно тебе надо" и обложкой */
@@ -88,7 +88,7 @@ main {
 /* стили для всей секции */
 .cover {
   position: relative;
-  height: 757px;
+  min-height: 757px;
   padding: 165px 51px 50px 51px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
@@ -170,7 +170,7 @@ main {
 /* стили для кнопки «Сделать ставку */
 .bet-button {
   justify-self: end;
-  border: 1px #fff solid;
+  border: 1px currentColor solid;
   padding: 12px 32px 11px 31px;
   color: #fff;
   font-family: 'Raleway', sans-serif;
@@ -215,7 +215,6 @@ main {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 334px;
-  height: 100%;
   list-style: none;
 }
 
@@ -223,6 +222,7 @@ main {
 .card-link {
   display: block;
   text-decoration: none;
+  height: 100%;
 }
 
 /* стили для карточки */
@@ -232,8 +232,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 563px;
-  padding: 50px 40px;
+  min-height: 563px;
+  padding: 50px 40px 49px;
+  height: 100%;
   text-align: left;
   background-position: center;
   background-size: cover;
@@ -265,7 +266,7 @@ main {
   line-height: 1.19;
   text-align: left;
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 2px;
   text-transform: uppercase;
 }
 
@@ -370,6 +371,8 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   font-style: inherit;
+  font-size: 18px;
+  line-height: 1.35;
 }
 
 /* стили для списка пуктов меню */
@@ -380,22 +383,20 @@ main {
 /* стили для пункта списка меню */
 .footer__menu-list-item {
   font-size: 18px;
-  line-height: normal;
+  line-height: 1.17;
   list-style: none;
 }
 
-/* стили для ссылки меню */
-.footer__menu-link {
-  font-size: 18px;
-  line-height: 1.17;
-  text-decoration: none;
-  white-space: nowrap;
+/* стили для ссылок с underline в футере */
+.footer__link {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* стили для активной ссылки меню */
-.footer__menu-link_active {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+.footer__link_active {
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 /* стили для списка ссылок на соц сети */
