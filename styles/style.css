@@ -76,11 +76,21 @@ main {
 .address {
   display: flex;
   flex-direction: column;
-  justify-self: end;
-  padding-right: 86px;
   font-style: inherit;
   font-size: 18px;
   line-height: 1.35;
+}
+
+/* стили, чтобы выравнивать блок с адресом. В футере используется другое выравнивание.*/
+.header__address {
+  justify-self: end;
+  padding-right: 86px;
+}
+
+/* стили для ссылок с underline в блоке с адресом на сайте */
+.address__link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 /* Секция с заголовком "Оно тебе надо" и обложкой */
@@ -365,14 +375,9 @@ main {
   padding-left: 37px;
 }
 
-/* стили для контейнера с адресом */
+/* стили, чтобы выравнивать блок с адресом в подвале */
 .footer__address {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
-  font-style: inherit;
-  font-size: 18px;
-  line-height: 1.35;
 }
 
 /* стили для списка пуктов меню */
